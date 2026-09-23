@@ -38,6 +38,20 @@
 
 ## 技术栈
 
+### AI 工具与模型
+
+<p>
+  <img height="48" src="https://cdn.simpleicons.org/claude" alt="Claude" />
+  <img height="48" src="https://api.iconify.design/devicon-plain/codex.svg?color=%23000000" alt="Codex" />
+  <img height="48" src="https://cdn.simpleicons.org/cursor" alt="Cursor" />
+  <img height="48" src="https://cdn.simpleicons.org/githubcopilot" alt="GitHub Copilot" />
+  <img height="48" src="https://cdn.simpleicons.org/deepseek" alt="DeepSeek" />
+  <img height="48" src="https://cdn.simpleicons.org/minimax" alt="MiniMax" />
+</p>
+
+AI 编程：`Claude Code` · `Codex` · `Cursor` · `GitHub Copilot`
+模型与 API：`GPT` · `Claude` · `DeepSeek` · `GLM` · `MiniMax`
+
 ### 语言与产品研发
 
 <p>

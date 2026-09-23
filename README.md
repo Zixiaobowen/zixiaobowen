@@ -38,6 +38,20 @@ Frontend / Full-stack developer working on enterprise applications, open-source 
 
 ## Tech Stack
 
+### AI Tools & Models
+
+<p>
+  <img height="48" src="https://cdn.simpleicons.org/claude" alt="Claude" />
+  <img height="48" src="https://api.iconify.design/devicon-plain/codex.svg?color=%23000000" alt="Codex" />
+  <img height="48" src="https://cdn.simpleicons.org/cursor" alt="Cursor" />
+  <img height="48" src="https://cdn.simpleicons.org/githubcopilot" alt="GitHub Copilot" />
+  <img height="48" src="https://cdn.simpleicons.org/deepseek" alt="DeepSeek" />
+  <img height="48" src="https://cdn.simpleicons.org/minimax" alt="MiniMax" />
+</p>
+
+AI coding: `Claude Code` · `Codex` · `Cursor` · `GitHub Copilot`
+Models & APIs: `GPT` · `Claude` · `DeepSeek` · `GLM` · `MiniMax`
+
 ### Languages & Product Engineering
 
 <p>
