@@ -2,7 +2,14 @@
 
 <p><a href="./README.md">English</a> · <strong>简体中文</strong></p>
 
-# 你好，我是 Zixiaobowen 👋
+<h1>
+  <a href="https://ascii.rest/banner/?text=zixiaobowen&amp;font=slim&amp;shadow=rounded&amp;color=2563eb%2C0d9488&amp;speed=slow&amp;size=l&amp;tagline=build.%20observe.%20debug.%20repeat.">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://ascii.rest/banner/zixiaobowen.dark.svg?font=slim&amp;shadow=rounded&amp;color=2563eb%2C0d9488&amp;speed=slow&amp;size=l&amp;tagline=build.%20observe.%20debug.%20repeat.">
+      <img src="https://ascii.rest/banner/zixiaobowen.svg?font=slim&amp;shadow=rounded&amp;color=2563eb%2C0d9488&amp;speed=slow&amp;size=l&amp;tagline=build.%20observe.%20debug.%20repeat." alt="你好，我是 Zixiaobowen — 构建、观测、调试、持续改进。" width="696">
+    </picture>
+  </a>
+</h1>
 
 ### 构建可靠的软件系统与 AI 原生研发工作流
 

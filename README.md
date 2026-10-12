@@ -2,7 +2,14 @@
 
 <p><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></p>
 
-# Hi, I'm Zixiaobowen 👋
+<h1>
+  <a href="https://ascii.rest/banner/?text=zixiaobowen&amp;font=slim&amp;shadow=rounded&amp;color=2563eb%2C0d9488&amp;speed=slow&amp;size=l&amp;tagline=build.%20observe.%20debug.%20repeat.">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://ascii.rest/banner/zixiaobowen.dark.svg?font=slim&amp;shadow=rounded&amp;color=2563eb%2C0d9488&amp;speed=slow&amp;size=l&amp;tagline=build.%20observe.%20debug.%20repeat.">
+      <img src="https://ascii.rest/banner/zixiaobowen.svg?font=slim&amp;shadow=rounded&amp;color=2563eb%2C0d9488&amp;speed=slow&amp;size=l&amp;tagline=build.%20observe.%20debug.%20repeat." alt="Hi, I'm Zixiaobowen — build. observe. debug. repeat." width="696">
+    </picture>
+  </a>
+</h1>
 
 ### Building reliable software systems and AI-native engineering workflows
 
