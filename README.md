@@ -11,53 +11,45 @@
   </a>
 </h1>
 
-### Building reliable software systems and AI-native engineering workflows
+### Enterprise software engineering and AI workflows
 
-Frontend / Full-stack developer working on enterprise applications, open-source virtualization, design systems, and multi-agent development.
+Frontend / full-stack engineer working on virtualization and disaster recovery, frontend platforms, product websites, and multi-client business systems. I also build and maintain AI workflows: configuring model routing, coordinating agents, and verifying their work in real projects.
 
 <p>
   <img src="https://img.shields.io/badge/AI_Agents-111827?style=flat-square&logo=openai&logoColor=white" alt="AI Agents" />
   <img src="https://img.shields.io/badge/Agent_Orchestration-4F46E5?style=flat-square" alt="Agent Orchestration" />
   <img src="https://img.shields.io/badge/MCP-0F766E?style=flat-square" alt="Model Context Protocol" />
-  <img src="https://img.shields.io/badge/Evals-B45309?style=flat-square" alt="AI Evals" />
+  <img src="https://img.shields.io/badge/Local_Models-B45309?style=flat-square" alt="Local Models" />
   <img src="https://img.shields.io/badge/Observable_by_Design-0369A1?style=flat-square" alt="Observable by Design" />
 </p>
 
 </div>
 
-## AI & Current Focus
+## AI Engineering Workflows
 
-- 🤖 Building workflows where **Codex, Claude Code, and other coding agents** can collaborate with durable context and clear ownership.
-- 🧭 Exploring **multi-agent orchestration** with goals, delegation, governance, budgets, approvals, and auditable execution.
-- 🧪 Treating prompts, context, MCP tools, and evals as versioned engineering assets rather than disposable chat history.
-- 🔍 Designing agent-assisted development around observability, traceability, reproducibility, and root-cause debugging.
-- 🏗️ Applying AI-native workflows to complex enterprise software, virtualization, disaster recovery, and open-source products.
+I make the requirements and architecture decisions and take responsibility for final acceptance. Agents work on scoped research, implementation, and review tasks.
 
-## What I Build
+- **Model routing** — configure shared routing through Magpie for Tern / OMP and Hermes, assigning work by task type and complexity. Connect local Qwen models through LM Studio alongside cloud models.
+- **Agent collaboration** — split independent tasks, define file ownership and acceptance criteria, and use Git worktrees when changes need isolation. The lead agent integrates the results.
+- **Persistent context** — maintain versioned `AGENTS.md`, project memory, and handoff records with constraints, decisions, and verification results. Turn recurring procedures into skills with explicit scope and triggers.
+- **Tools and runtime** — connect repositories, documents, and external services through MCP, CLIs, and the browser. Check actual tool calls and runtime entry points when maintaining the agent environment.
+- **Delivery evidence** — run targeted tests, browser checks, and package/install smoke checks as needed. Track code pushed, artifacts packaged, services deployed, and live integrations verified as separate outcomes.
 
-| Area | Work |
-| --- | --- |
-| **AI Agent Systems** | Multi-agent coordination, persistent task context, runtime skills, governance, cost control, and execution audit trails. |
-| **AI-Native Engineering** | Repository context systems, prompts, MCP integrations, eval suites, agent definitions, and reproducible development workflows. |
-| **Enterprise Frontend** | Large React and TypeScript applications, design systems, micro-frontends, Module Federation, and Nx monorepos. |
-| **Cloud & Virtualization** | Management consoles, documentation platforms, recovery workflows, observability, and deployment automation. |
-| **Open Source Platforms** | Product websites, documentation systems, community infrastructure, bilingual content, search, and release validation. |
+## Engineering Work
+
+- **Virtualization & disaster recovery** — resource monitoring and alarms, recovery-point and DR-drill workflows, GraphQL BFF models and type contracts, and Chinese/English/Russian localization.
+- **Frontend platform engineering** — Rspack/Rsbuild upgrades, Module Federation compatibility, dark-mode and theming integrations, and ongoing type/test-debt cleanup.
+- **Product sites & knowledge platforms** — bilingual product and documentation sites, full-text documentation search, technical content, download/installation analytics, and deployment verification.
+- **Multi-client business apps** — NestJS/Prisma APIs, PostgreSQL, Next.js web, React Native/Expo apps, and a Taro mini-program; a shared design system, Android packaging, and release hardening.
 
 ## Tech Stack
 
-### AI Tools & Models
+### AI Environment
 
-<p>
-  <img height="48" src="https://cdn.simpleicons.org/claude" alt="Claude" />
-  <img height="48" src="https://api.iconify.design/devicon-plain/codex.svg?color=%23000000" alt="Codex" />
-  <img height="48" src="https://cdn.simpleicons.org/cursor" alt="Cursor" />
-  <img height="48" src="https://cdn.simpleicons.org/githubcopilot" alt="GitHub Copilot" />
-  <img height="48" src="https://cdn.simpleicons.org/deepseek" alt="DeepSeek" />
-  <img height="48" src="https://cdn.simpleicons.org/minimax" alt="MiniMax" />
-</p>
-
-AI coding: `Claude Code` · `Codex` · `Cursor` · `GitHub Copilot`
-Models & APIs: `GPT` · `Claude` · `DeepSeek` · `GLM` · `MiniMax`
+- Agent environments: `Tern / OMP` · `Hermes` · `Codex` · `Claude Code`
+- Model access & routing: `Magpie` · `LM Studio` · `GPT` · `DeepSeek` · `Qwen / MLX`
+- Context & tools: `AGENTS.md` · `Skills` · `MCP` · project memory · handoff records
+- Other tools and models used: `Cursor` · `GitHub Copilot` · `Claude` · `GLM` · `MiniMax`
 
 ### Languages & Product Engineering
 
@@ -65,13 +57,19 @@ Models & APIs: `GPT` · `Claude` · `DeepSeek` · `GLM` · `MiniMax`
   <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,astro,nodejs,nestjs,java,spring,graphql" alt="TypeScript, JavaScript, React, Next.js, Astro, Node.js, NestJS, Java, Spring and GraphQL" />
 </p>
 
+### Desktop & Mobile
+
+- Desktop: `Electron` · `Swift / SwiftUI` · `SQLite` · `CloudKit`
+- Mobile: `React Native / Expo` · `Taro`
+- Exploration: `Tauri / Rust`
+
 ### Data, Tooling & Infrastructure
 
 <p>
   <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,vite,vitest,jest,docker,git,githubactions,pnpm,bun" alt="PostgreSQL, MySQL, Redis, Vite, Vitest, Jest, Docker, Git, GitHub Actions, pnpm and Bun" />
 </p>
 
-`Nx` · `Rspack` · `Module Federation` · `Playwright` · `OpenAPI` · `Monorepo` · `MCP` · `AI Evals`
+`Nx` · `Rspack / Rsbuild` · `Module Federation` · `Prisma` · `Playwright` · `OpenAPI` · `Orama`
 
 ## Engineering Principles
 

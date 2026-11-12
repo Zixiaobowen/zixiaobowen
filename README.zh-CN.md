@@ -11,53 +11,45 @@
   </a>
 </h1>
 
-### 构建可靠的软件系统与 AI 原生研发工作流
+### 企业软件工程与 AI 工作流实践
 
-前端 / 全栈开发者，专注于企业级应用、开源虚拟化、设计系统与多 Agent 协作研发。
+前端 / 全栈工程师，工作覆盖虚拟化与容灾、前端平台、产品网站及多端业务系统。我也搭建和维护自己的 AI 研发工作流：配置模型路由、组织 Agent 协作，并在真实项目中验证结果。
 
 <p>
   <img src="https://img.shields.io/badge/AI_Agents-111827?style=flat-square&logo=openai&logoColor=white" alt="AI Agents" />
   <img src="https://img.shields.io/badge/Agent_Orchestration-4F46E5?style=flat-square" alt="Agent Orchestration" />
   <img src="https://img.shields.io/badge/MCP-0F766E?style=flat-square" alt="Model Context Protocol" />
-  <img src="https://img.shields.io/badge/Evals-B45309?style=flat-square" alt="AI Evals" />
+  <img src="https://img.shields.io/badge/Local_Models-B45309?style=flat-square" alt="Local Models" />
   <img src="https://img.shields.io/badge/Observable_by_Design-0369A1?style=flat-square" alt="Observable by Design" />
 </p>
 
 </div>
 
-## AI 与当前关注方向
+## AI 工作流实践
 
-- 🤖 构建让 **Codex、Claude Code 及其他编程 Agent** 基于持久上下文和清晰职责进行协作的研发流程。
-- 🧭 探索包含目标、委派、治理、预算、审批和执行审计的**多 Agent 编排**。
-- 🧪 将提示词、上下文、MCP 工具和评测集视为可版本化的工程资产，而非一次性的聊天记录。
-- 🔍 围绕可观测性、可追溯性、可复现性和根因分析设计 AI 辅助研发流程。
-- 🏗️ 将 AI 原生研发方式应用于复杂企业软件、虚拟化、容灾和开源产品。
+我负责需求判断、架构取舍和最终验收，Agent 在明确的任务范围内参与调查、实现与评审。
 
-## 我的工作方向
+- **模型分工**：通过 Magpie 为 Tern / OMP 与 Hermes 配置共享模型路由，按任务类型和复杂度分配工作；通过 LM Studio 接入本地 Qwen 模型，与云端模型配合使用。
+- **Agent 协作**：拆分可独立执行的任务，明确负责文件与验收条件；需要隔离的改动使用 Git worktree，由主代理整合结果。
+- **上下文维护**：用版本化的 `AGENTS.md`、项目记忆和交接记录保存约束、决策与验证结果。将反复使用的流程整理为 Skills，明确适用范围和触发条件。
+- **工具与环境维护**：通过 MCP、CLI 和浏览器接入仓库、文档与外部服务；维护 Agent 环境时，检查实际工具调用和运行入口是否生效。
+- **交付验证**：按需运行相关测试、浏览器检查和打包/安装冒烟检查。代码已推送、制品已打包、服务已部署、真实集成已验收，分别记录和核实。
 
-| 方向 | 工作内容 |
-| --- | --- |
-| **AI Agent 系统** | 多 Agent 协作、持久任务上下文、运行时技能、治理、成本控制与执行审计。 |
-| **AI 原生研发** | 仓库上下文系统、提示词、MCP 集成、评测集、Agent 定义与可复现研发流程。 |
-| **企业级前端** | 大型 React 与 TypeScript 应用、设计系统、微前端、Module Federation 与 Nx Monorepo。 |
-| **云与虚拟化** | 管理控制台、文档平台、容灾流程、可观测性与部署自动化。 |
-| **开源平台** | 产品官网、文档系统、社区基础设施、双语内容、搜索与发布验证。 |
+## 工程实践
+
+- **虚拟化与容灾**——资源监控和告警、恢复点与容灾演练流程、GraphQL BFF 模型与类型契约，以及中英俄多语言支持。
+- **前端平台治理**——Rspack/Rsbuild 升级、Module Federation 兼容性、深色模式与主题集成，以及持续的类型和测试技术债清理。
+- **产品网站与知识平台**——双语产品网站和文档平台、文档全文搜索、技术内容、下载与装机分析，以及部署验证。
+- **多端业务系统**——NestJS/Prisma API、PostgreSQL、Next.js Web、React Native/Expo 应用及 Taro 小程序；共享设计系统、Android 打包与发布质量治理。
 
 ## 技术栈
 
-### AI 工具与模型
+### AI 工作环境
 
-<p>
-  <img height="48" src="https://cdn.simpleicons.org/claude" alt="Claude" />
-  <img height="48" src="https://api.iconify.design/devicon-plain/codex.svg?color=%23000000" alt="Codex" />
-  <img height="48" src="https://cdn.simpleicons.org/cursor" alt="Cursor" />
-  <img height="48" src="https://cdn.simpleicons.org/githubcopilot" alt="GitHub Copilot" />
-  <img height="48" src="https://cdn.simpleicons.org/deepseek" alt="DeepSeek" />
-  <img height="48" src="https://cdn.simpleicons.org/minimax" alt="MiniMax" />
-</p>
-
-AI 编程：`Claude Code` · `Codex` · `Cursor` · `GitHub Copilot`
-模型与 API：`GPT` · `Claude` · `DeepSeek` · `GLM` · `MiniMax`
+- Agent 环境：`Tern / OMP` · `Hermes` · `Codex` · `Claude Code`
+- 模型接入与路由：`Magpie` · `LM Studio` · `GPT` · `DeepSeek` · `Qwen / MLX`
+- 上下文与工具：`AGENTS.md` · `Skills` · `MCP` · 项目记忆 · 交接记录
+- 其他使用经验：`Cursor` · `GitHub Copilot` · `Claude` · `GLM` · `MiniMax`
 
 ### 语言与产品研发
 
@@ -65,13 +57,19 @@ AI 编程：`Claude Code` · `Codex` · `Cursor` · `GitHub Copilot`
   <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,astro,nodejs,nestjs,java,spring,graphql" alt="TypeScript、JavaScript、React、Next.js、Astro、Node.js、NestJS、Java、Spring 和 GraphQL" />
 </p>
 
+### 桌面与移动端
+
+- 桌面：`Electron` · `Swift / SwiftUI` · `SQLite` · `CloudKit`
+- 移动端：`React Native / Expo` · `Taro`
+- 探索：`Tauri / Rust`
+
 ### 数据、工具与基础设施
 
 <p>
   <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,vite,vitest,jest,docker,git,githubactions,pnpm,bun" alt="PostgreSQL、MySQL、Redis、Vite、Vitest、Jest、Docker、Git、GitHub Actions、pnpm 和 Bun" />
 </p>
 
-`Nx` · `Rspack` · `Module Federation` · `Playwright` · `OpenAPI` · `Monorepo` · `MCP` · `AI Evals`
+`Nx` · `Rspack / Rsbuild` · `Module Federation` · `Prisma` · `Playwright` · `OpenAPI` · `Orama`
 
 ## 工程原则
 
