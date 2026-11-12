@@ -44,32 +44,53 @@
 
 ## 技术栈
 
-### AI 工作环境
+### AI · 基模与 Agent 工程
 
-- Agent 环境：`Tern / OMP` · `Hermes` · `Codex` · `Claude Code`
-- 模型接入与路由：`Magpie` · `LM Studio` · `GPT` · `DeepSeek` · `Qwen / MLX`
-- 上下文与工具：`AGENTS.md` · `Skills` · `MCP` · 项目记忆 · 交接记录
-- 其他使用经验：`Cursor` · `GitHub Copilot` · `Claude` · `GLM` · `MiniMax`
+| 层面 | 技术与实践 |
+| --- | --- |
+| **Foundation Models · 基模** | `GPT` · `Claude` · `DeepSeek` · `Qwen / MLX` · `GLM` · `MiniMax`；通过 `Magpie` 配置模型路由，通过 `LM Studio` 运行本地模型。 |
+| **Harness · 运行环境** | `OMP` · `Hermes` · `Codex` · `Claude Code`；在 `Tern` 中组织 Agent 交互，管理工具权限、会话上下文与执行边界。 |
+| **Loop · 执行与反馈** | 任务拆解、工具调用、结果验证与反馈修正；按任务边界派发子代理，整合结果后继续执行。 |
+| **Graph · 代码关系** | `Graphify` · `Madar`；查询调用链与依赖关系，提取任务需要的代码上下文。 |
+| **Skills · 可复用能力** | 用 `SKILL.md` 组织操作步骤、脚本与参考资料，维护触发条件、适用范围和验证方式。 |
+| **Workflow · 研发流程** | 用 `AGENTS.md`、项目记忆和交接记录连接需求、实现、评审、测试与发布验收。 |
 
-### 语言与产品研发
+工具连接：`MCP` · `CLI` · 浏览器自动化。编辑器辅助：`Cursor` · `GitHub Copilot`。
+
+---
+
+### 古法技术栈 · 前端为主的全栈与跨端
+
+以 TypeScript / React 前端为重心，覆盖服务端、桌面与移动端，以及构建、测试和部署。
+
+#### 前端
 
 <p>
-  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,astro,nodejs,nestjs,java,spring,graphql" alt="TypeScript、JavaScript、React、Next.js、Astro、Node.js、NestJS、Java、Spring 和 GraphQL" />
+  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,astro" alt="TypeScript、JavaScript、React、Next.js 和 Astro" />
 </p>
 
-### 桌面与移动端
+设计系统、主题与多语言；`Nx` · `Module Federation` · `Vite` · `Rspack / Rsbuild`。
+
+#### 服务端与数据
+
+- API：`Node.js` · `NestJS` · `GraphQL` · `OpenAPI` · `Java / Spring`
+- 数据与检索：`PostgreSQL` · `MySQL` · `Redis` · `Prisma` · `Orama`
+
+#### 跨端
 
 - 桌面：`Electron` · `Swift / SwiftUI` · `SQLite` · `CloudKit`
-- 移动端：`React Native / Expo` · `Taro`
+- 移动端与小程序：`React Native / Expo` · `Taro`
 - 探索：`Tauri / Rust`
 
-### 数据、工具与基础设施
+#### 工程化与部署
 
 <p>
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,vite,vitest,jest,docker,git,githubactions,pnpm,bun" alt="PostgreSQL、MySQL、Redis、Vite、Vitest、Jest、Docker、Git、GitHub Actions、pnpm 和 Bun" />
+  <img src="https://skillicons.dev/icons?i=vitest,jest,docker,nginx,git,githubactions,pnpm,bun" alt="Vitest、Jest、Docker、Nginx、Git、GitHub Actions、pnpm 和 Bun" />
 </p>
 
-`Nx` · `Rspack / Rsbuild` · `Module Federation` · `Prisma` · `Playwright` · `OpenAPI` · `Orama`
+- 测试与验收：`Vitest` · `Jest` · `Playwright`，覆盖相关测试、浏览器验收和打包/安装检查。
+- 构建与交付：`Git` · `pnpm` · `Bun` · `GitHub Actions`；Web 构建、桌面与移动端打包。
+- 部署：`Docker` · `Nginx` · `Linux / SSH`；服务配置、部署验证与线上问题定位。
 
 ## 工程原则
 

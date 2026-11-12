@@ -44,32 +44,53 @@ I make the requirements and architecture decisions and take responsibility for f
 
 ## Tech Stack
 
-### AI Environment
+### AI · Foundation Models & Agent Engineering
 
-- Agent environments: `Tern / OMP` · `Hermes` · `Codex` · `Claude Code`
-- Model access & routing: `Magpie` · `LM Studio` · `GPT` · `DeepSeek` · `Qwen / MLX`
-- Context & tools: `AGENTS.md` · `Skills` · `MCP` · project memory · handoff records
-- Other tools and models used: `Cursor` · `GitHub Copilot` · `Claude` · `GLM` · `MiniMax`
+| Layer | Tools & practice |
+| --- | --- |
+| **Foundation Models** | `GPT` · `Claude` · `DeepSeek` · `Qwen / MLX` · `GLM` · `MiniMax`; model routing through `Magpie`, local inference through `LM Studio`. |
+| **Harness** | `OMP` · `Hermes` · `Codex` · `Claude Code`; agent interaction in `Tern`, with tool permissions, session context, and execution boundaries. |
+| **Loop** | Task decomposition, tool calls, verification, and feedback; delegate scoped tasks to subagents, integrate results, and continue execution. |
+| **Graph** | `Graphify` · `Madar`; query call chains and dependencies, and extract code context for the task. |
+| **Skills** | Organize procedures, scripts, and references in `SKILL.md`, with explicit triggers, scope, and verification steps. |
+| **Workflow** | Connect requirements, implementation, review, testing, and release acceptance through `AGENTS.md`, project memory, and handoff records. |
 
-### Languages & Product Engineering
+Tool integration: `MCP` · `CLI` · browser automation. Editor assistance: `Cursor` · `GitHub Copilot`.
+
+---
+
+### Traditional Engineering · Frontend, Full-stack & Cross-platform
+
+TypeScript / React is my main focus, alongside backend services, desktop and mobile apps, builds, testing, and deployment.
+
+#### Frontend
 
 <p>
-  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,astro,nodejs,nestjs,java,spring,graphql" alt="TypeScript, JavaScript, React, Next.js, Astro, Node.js, NestJS, Java, Spring and GraphQL" />
+  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,astro" alt="TypeScript, JavaScript, React, Next.js and Astro" />
 </p>
 
-### Desktop & Mobile
+Design systems, theming, and localization; `Nx` · `Module Federation` · `Vite` · `Rspack / Rsbuild`.
+
+#### Backend & Data
+
+- APIs: `Node.js` · `NestJS` · `GraphQL` · `OpenAPI` · `Java / Spring`
+- Data & search: `PostgreSQL` · `MySQL` · `Redis` · `Prisma` · `Orama`
+
+#### Cross-platform
 
 - Desktop: `Electron` · `Swift / SwiftUI` · `SQLite` · `CloudKit`
-- Mobile: `React Native / Expo` · `Taro`
+- Mobile & mini-programs: `React Native / Expo` · `Taro`
 - Exploration: `Tauri / Rust`
 
-### Data, Tooling & Infrastructure
+#### Tooling & Deployment
 
 <p>
-  <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,vite,vitest,jest,docker,git,githubactions,pnpm,bun" alt="PostgreSQL, MySQL, Redis, Vite, Vitest, Jest, Docker, Git, GitHub Actions, pnpm and Bun" />
+  <img src="https://skillicons.dev/icons?i=vitest,jest,docker,nginx,git,githubactions,pnpm,bun" alt="Vitest, Jest, Docker, Nginx, Git, GitHub Actions, pnpm and Bun" />
 </p>
 
-`Nx` · `Rspack / Rsbuild` · `Module Federation` · `Prisma` · `Playwright` · `OpenAPI` · `Orama`
+- Testing & acceptance: `Vitest` · `Jest` · `Playwright`, covering targeted tests, browser verification, and package/install checks.
+- Builds & delivery: `Git` · `pnpm` · `Bun` · `GitHub Actions`; web builds and desktop/mobile packaging.
+- Deployment: `Docker` · `Nginx` · `Linux / SSH`; service configuration, deployment verification, and production debugging.
 
 ## Engineering Principles
 
